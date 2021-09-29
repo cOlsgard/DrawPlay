@@ -28,13 +28,14 @@ public class Cat {
 		int y=catY;
 		// Draw the head
 		g2.setColor(Color.orange);
-		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION-20);
 		// Draw the eyes
 		g2.setColor(Color.yellow);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
+		g2.setColor(Color.green);
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Draw the mouth
 		g2.setColor(Color.black);
